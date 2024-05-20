@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #b6b4b4;
+    color: #121212;
+}
+.logo{
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #090909;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/*------------ads-----------------*/
+.ads-section  {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.ads-section img {
+    mix-blend-mode: color-burn;
+    /*aspect-ratio: 3/2;*/
+    width: 100%;
+    max-height: 40vw;
+    height: auto;
+    display: none;
+}
+.ads-section img.active {
+    display: block;
+}
+/*-------------ads2 -----------------*/
+.ads2-section {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.ads2-section img {
+    width: 100%;
+    max-height: 40vw;
+    height: auto;
+    display: none;
+}
+.ads2-section img.active {
+    display: block;
+}
+
+/*----------------ads3-------------------*/
+.ads3-section {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.ads3-section img {
+    width: 100%;
+    max-height: 40vw;
+    height: auto;
+    display: none;
+}
+.ads3-section img.active {
+    display: block;
+}
+
+/* ------------home ----------- */
+
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+.home-section img {
+    
+    object-fit: contain;
+    max-width: 30vw;
+    height: auto;
+    transition: transform 0.3s;
+    flex: 1 1 100%;
+}
+.home-section img:hover {
+    transform: scale(1.1);
+}
+.home-content {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.home-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.home-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.home-content button:hover {
+    background-color: #e64a19;
+}
+
+/*-------------veg-----------------------*/
+
+.veg-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+.veg-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.veg-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.veg-product {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    max-width: 200px;
+    text-align: center;
+    flex: 1 1 calc(50% - 40px);
+}
+.veg-product img {
+    aspect-ratio: 3/2;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.veg-product button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.veg-product button:hover {
+    background-color: #388e3c;
+}
+
+/*-------------non veg-------------------*/
+
+.nonveg-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+.nonveg-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nonveg-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nonveg-product {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    max-width: 200px;
+    text-align: center;
+    flex: 1 1 calc(50% - 40px);
+
+}
+
+.nonveg-product img {
+    aspect-ratio: 3/2;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.nonveg-product button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.nonveg-product button:hover {
+    background-color: #388e3c;
+}
+
+/*................best offer...................*/
+
+.best-offer-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+.best-offer-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.best-offer-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.best-offer-product {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex: 1 1 45%;
+    text-align: center;
+}
+.best-offer-product img {
+    max-width: 100%;
+    height: 40vw;
+}
+.best-offer-product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.best-offer-product p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.best-offer-product button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.best-offer-product button:hover {
+    background-color: #e64a19;
+}
+@media (min-width: 769px) {
+    .best-offer-product {
+        flex: 1 1 30%;
+    }
+}
+
+/*--------------------sweets----------------------*/
+.sweets-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+.sweets-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sweets-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sweets-product {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex: 1 1 45%;
+    text-align: center;
+}
+.sweets-product img {
+    max-width: 100%;
+    height: 20vw;
+}
+.sweets-product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.sweets-product p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.sweets-product button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.sweets-product button:hover {
+    background-color: #e64a19;
+}
+@media (min-width: 769px) {
+    .sweets-product {
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 769px) {
+    .veg-product {
+        flex: 1 1 calc(25% - 40px);
+    }
+    .nonveg-product{
+        flex: 1 1 calc(25% - 40px);   
+    }
+}
+@media (min-width: 1197px) {
+    .home-section {
+        flex-wrap: nowrap;
+    }
+    .home-section img {
+        flex: 1 1 50%;
+        margin-right: 20px;
+    }
+    .home-content {
+        flex: 1 1 50%;
+        margin: 0;
+        text-align: left;
+    }
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    display: flex;
+}
+
+footer{
+    color: wheat;
+    background-color: #090909;
+    max-width: 100%;
+    
+
+}
+.fo{
+    display: flex;
+    justify-content: center;
+}
